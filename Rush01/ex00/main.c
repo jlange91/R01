@@ -6,7 +6,7 @@
 /*   By: jlange <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 15:23:03 by jlange            #+#    #+#             */
-/*   Updated: 2020/11/02 23:13:26 by jlange           ###   ########.fr       */
+/*   Updated: 2020/11/06 13:14:58 by jlange           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int			main(int ac, char **av)
 	t_pos	p;
 
 	r = (t_rush){ NULL, NULL, NULL, NULL, 0, NULL };
-	if (ac > 2 || check_arg(&r, av[1])
+	if (ac != 2 || check_arg(&r, av[1])
 		|| init_raw_col(&r, av[1]) || init_final_map(&r))
 	{
 		write(1, "Error\n", 6);
